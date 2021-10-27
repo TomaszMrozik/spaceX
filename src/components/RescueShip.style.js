@@ -9,4 +9,7 @@ export const RescueShipStyle = styled.div`
   margin: 20px 15px;
   background: #FFF;
   border-radius: 20px;
+  :last-of-type {
+    margin-bottom: 200px;
+  }
 `

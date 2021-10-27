@@ -10,7 +10,7 @@ const RescueShipsSection = () => {
             <Container justifyContent={'center'}>
                 <RescueShip/>
                 <RescueShip/>
-                <RescueShip/>
+                <RescueShip paddingBottom={'600px'}/>
             </Container>
         </Container>
     );
