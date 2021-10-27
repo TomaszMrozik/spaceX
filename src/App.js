@@ -9,9 +9,9 @@ function App() {
   return (
       <Background>
           <NavSection/>
-          <SectionDivider/>
+          <SectionDivider background={'#5C5C5D'}/>
           <DataSection/>
-          <SectionDivider/>
+          <SectionDivider background={'#5C5C5D'}/>
           <RescueShipsSection/>
       </Background>
   );

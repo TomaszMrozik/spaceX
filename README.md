@@ -1,4 +1,4 @@
-##Technologies used in the project:
+## Technologies used in the project:
 ### - React.js
 ### - styled-components
 
