@@ -29,17 +29,17 @@ const Launches = ({ loading, launches }) => {
                     <Container direction={'column'} alignItems={'flex-start'}>
                         <>
                             <DataType margin={'17px 0 0 20px'} >mission</DataType>
-                            <DataInfo fontSize={'2rem'} fontWeight={'700'} margin={'0 0 0 20px'} key={launch.id}>{launch.mission_name}</DataInfo>
+                            <DataInfo fontSize={'2rem'} fontWeight={'700'} margin={'0 0 0 20px'}>{launch.mission_name}</DataInfo>
                             <DataType margin={'20px 0 0 20px'}>rocket <Recover>recovered</Recover></DataType>
-                            <DataInfo margin={'0 0 0 20px'} fontSize={'1.2rem'} fontWeight={'500'} key={launch.id}>{launch.rocket.rocket_name}</DataInfo>
-                            <Button key={launch.id} onClick={() => {OpenArticle(launch.links.article_link)}}>Learn more</Button>
+                            <DataInfo margin={'0 0 0 20px'} fontSize={'1.2rem'} fontWeight={'500'}>{launch.rocket.rocket_name}</DataInfo>
+                            <Button onClick={() => {OpenArticle(launch.links.article_link)}}>Learn more</Button>
                         </>
 
                         <>
                             <DataType margin={'0 0 0 20px'}>Launch Date</DataType>
-                            <DataInfo margin={'0 0 19px 20px'} fontSize={'1.2rem'} fontWeight={'500'} key={launch.id}>{launch.launch_date_local}</DataInfo>
+                            <DataInfo margin={'0 0 19px 20px'} fontSize={'1.2rem'} fontWeight={'500'}>{launch.launch_date_local}</DataInfo>
                             <DataType margin={'0 0 0 20px'}>launch site</DataType>
-                            <DataInfo margin={'0 0 19px 20px'} fontSize={'1.2rem'} fontWeight={'500'} key={launch.id}>{launch.launch_site.site_name}</DataInfo>
+                            <DataInfo margin={'0 0 19px 20px'} fontSize={'1.2rem'} fontWeight={'500'} >{launch.launch_site.site_name}</DataInfo>
                         </>
                     </Container>
 

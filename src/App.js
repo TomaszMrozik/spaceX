@@ -61,19 +61,20 @@ function App() {
 
 
     // Change page
-    const nextPage = () => {
+
+
+    const nextPage = (currentPage) => {
         setCurrentPage(parseFloat(currentPage) + 1);
         console.log(currentPage)
     }
-
-    const previousPage = () => {
+    const previousPage = (currentPage) => {
         setCurrentPage(parseInt(currentPage) - 1);
     }
 
   return (
 
       <Background>
-          <Pagination launchesPerPage={launchesPerPage} totalLaunches={launches.length} nextPage={nextPage} previousPage={previousPage}/>
+          <Pagination totalLaunches={launches.length} nextPage={nextPage} previousPage={previousPage} currentPage={currentPage}/>
           <SectionDivider background={'#5C5C5D'}/>
           <Launches loading={loading} launches={currentLaunches}/>
       </Background>
