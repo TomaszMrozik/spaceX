@@ -1,7 +1,15 @@
-## Technologies used in the project:
+# Project Overview
+This is a simple website which displays latest spaceX missions.
+
+# Tech/framework used
 ### - React.js
 ### - styled-components
 
+## Instalation 
+To install all needed libraries just type `npm install` in uploaded file's terminal 
+
+## How to start a localhost preview?
+To start the project type `npm start` in terminal
 
 _________
 # Getting Started with Create React App
