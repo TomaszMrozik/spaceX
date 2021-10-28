@@ -51,6 +51,10 @@ function App() {
             .then(data => setLaunches(data.data.launchesPast))
     },[]);
 
+    function OpenArticle(url) {
+        window.open(url, '_blank').focus();
+    }
+
   return (
 
       <Background>
@@ -64,7 +68,7 @@ function App() {
                       <DataInfo fontSize={'2rem'} fontWeight={'700'} margin={'0 0 0 20px'} key={launch.id}>{launch.mission_name}</DataInfo>
                       <DataType margin={'20px 0 0 20px'}>rocket <Recover>recovered</Recover></DataType>
                       <DataInfo margin={'0 0 0 20px'} fontSize={'1.2rem'} fontWeight={'500'} key={launch.id}>{launch.rocket.rocket_name}</DataInfo>
-                      <Button key={launch.id}><a href={launch.links.article}>Learn more</a></Button>
+                      <Button key={launch.id} onClick={() => {OpenArticle(launch.links.article_link)}}>Learn more</Button>
                   </>
 
                   <>
