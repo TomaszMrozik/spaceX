@@ -4,8 +4,8 @@ import {ShipName} from "./ShipName.style";
 import {ShipDataType} from "./ShipDataType.style";
 import {ShipDataInfo} from "./ShipDataInfo.style";
 import {RescueShipStyle} from "./RescueShip.style";
-import {SectionDivider} from "./SectionDivider.style";
-import {Container} from "./Container.style";
+import {SectionDivider} from "../Generic/SectionDivider.style";
+import {Container} from "../Generic/Container.style";
 
 const RescueShip = () => {
     return (

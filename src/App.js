@@ -1,15 +1,14 @@
-import {Background} from "./components/Background.style";
+import {Background} from "./components/Generic/Background.style";
 import "./reset.css";
 import NavSection from "./sections/NavSection.style";
-import {SectionDivider} from "./components/SectionDivider.style";
-import DataSection from "./sections/DataSection";
+import {SectionDivider} from "./components/Generic/SectionDivider.style";
 import RescueShipsSection from "./sections/RescueShipsSection";
 import React from "react";
-import {DataType} from "./components/DataType.style";
-import {DataInfo} from "./components/DataInfo.style";
-import {Recover} from "./components/Recover.style";
-import {Button} from "./components/Button.style";
-import {Container} from "./components/Container.style";
+import {DataType} from "./components/LaunchesInfo/DataType.style";
+import {DataInfo} from "./components/LaunchesInfo/DataInfo.style";
+import {Recover} from "./components/LaunchesInfo/Recover.style";
+import {Button} from "./components/LaunchesInfo/Button.style";
+import {Container} from "./components/Generic/Container.style";
 const LAUNCHES_QUERY = `
 {
   launchesPast(limit: 10) {

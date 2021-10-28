@@ -1,7 +1,7 @@
 import React from 'react';
-import {Container} from "../components/Container.style";
-import {DataType} from "../components/DataType.style";
-import RescueShip from "../components/RescueShip";
+import {Container} from "../components/Generic/Container.style";
+import {DataType} from "../components/LaunchesInfo/DataType.style";
+import RescueShip from "../components/RescueShip/RescueShip";
 
 const RescueShipsSection = () => {
     return (
